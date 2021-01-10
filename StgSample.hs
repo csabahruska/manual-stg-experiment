@@ -448,7 +448,7 @@ sampleADT2 = do
 
   us <- mkSplitUniqSupply 'g'
 
-  compileProgram LLVM [tcMyBool] $ {-unarise us-} topBinds
+  compileProgram NCG [tcMyBool] $ {-unarise us-} topBinds
 
 -- CASE: user ADT with arguments Lifted
 sampleADTArgFloat = do
